@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="login.css">
+    <title>Login - Landing Page</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header-container">
+            <div class="header-content header-contentLeft">
+                <div class="header-logo">
+                    <a href="login.html" class="header-logo-link">
+                        <div class="header-logo-link-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h2 class="header-logo-link-text">Code <br>Mavericks.</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="header-content header-contentRight">
+                <div class="header-boxLogin box">
+                    <button class="btn btnBoxLogin">Login</button>
+                </div>
+
+                <div class="header-menuBurger">
+                    <div class="header-menuBurger-content header-menuBurger-contentTop"></div>
+                    <div class="header-menuBurger-content header-menuBurger-contentMiddle"></div>
+                    <div class="header-menuBurger-content header-menuBurger-contentBottom"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <div class="main-content">
+                <h1 class="main-title">Login</h1>
+                <div class="main-buttonClose">
+                    <p class="main-buttonClose-content">X</p>
+                </div>
+                <div class="main-form">
+                    <form class="main-form-login">
+                        <div class="main-box main-boxUser box">
+                            <div class="main-box-icon main-boxUser-icon">
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="main-box-input main-boxUser-input">
+                                <input type="text" id="user" name="user"
+                                    class="main-box-input-field main-boxUser-input-field" required
+                                    placeholder="Username/Email">
+                            </div>
+                        </div>
+                        <div class="main-box main-boxPassword box">
+                            <div class="main-box-icon main-boxPassword-icon">
+                                <i class="fa-solid fa-lock"></i>
+                            </div>
+                            <div class="main-box-input main-boxPassword-input">
+                                <input type="password" id="password" name="password"
+                                    class="main-box-input-field main-boxPassword-input-field" required
+                                    placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="main-box main-boxError box">
+                            <p class="main-boxError-message">
+
+                            </p>
+                        </div>
+                        <div class="main-box main-boxButton box">
+                            <button type="submit" class="btn btnFormLogin">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <h2 class="main-link">
+                    Don't have an account? <a href="signup.html" class="main-link-href">SignUp</a>
+                </h2>
+            </div>
+        </main>
+
+        <footer class="footer-container">
+            <div class="footer-content">
+                <p class="footer-signature">
+                    ©2025 Maverick inc. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="module" src="login.js"></script>
+
+</body>
+
+</html>

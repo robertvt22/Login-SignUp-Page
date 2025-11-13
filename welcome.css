@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Poppins:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Epunda Slab", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    background: url("img/img1.jpg") no-repeat center center/cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+button {
+    all: unset;
+    display: block;
+}
+
+.box {
+    width: 100%;
+    max-width: 20rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    max-width: 100rem;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+}
+
+.header-content {
+    flex: 1;
+}
+
+.header-contentLeft {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-logo-link-icon {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-link-icon .fa-solid {
+    font-size: 3rem;
+    color: #4896e4;
+}
+
+.header-logo-link-text {
+    font-size: 1.8rem;
+    color: #4896e4;
+    line-height: 1.1;
+}
+
+.header-logo:hover {
+    background-color: #173048;
+    border-radius: 0.5rem;
+    transition: all 1s ease;
+}
+
+.header-logo:hover .header-logo-link-icon .fa-solid {
+    color: #fff;
+    transition: all 1s ease;
+}
+
+.header-logo:hover .header-logo-link-text {
+    color: #fff;
+    transition: all 1s ease;
+}
+
+.header-contentRight {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header-boxWelcome.box {
+    max-width: 10rem;
+}
+
+.btnBoxWelcome {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #173048;
+}
+
+.btnBoxWelcome:hover {
+    background-color: #4896e4;
+    border: 0.2rem solid #173048;
+    transition: all 1s ease;
+}
+
+.header-menuBurger {
+    width: 4rem;
+    height: 3rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    cursor: pointer;
+}
+
+.header-menuBurger-content {
+    width: 3rem;
+    height: 0.3rem;
+    background-color: #fff;
+    border-radius: 2rem;
+}
+
+.header-menuBurger.active .header-menuBurger-contentTop {
+    transform: translateY(0.9rem) rotate(45deg);
+    transition: all 1s ease;
+}
+
+.header-menuBurger.active .header-menuBurger-contentMiddle {
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.header-menuBurger.active .header-menuBurger-contentBottom {
+    transform: translateY(-0.9rem) rotate(-45deg);
+    transition: all 1s ease;
+}
+
+.header-menuBurger:hover .header-menuBurger-content {
+    background-color: #4896e4;
+    transition: all 1s ease;
+}
+
+.main-container {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    position: relative;
+    width: 100%;
+    max-width: 25rem;
+    min-height: 30rem;
+    background-color: #ffffffdb;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.main-content.active {
+    display: flex;
+}
+
+.main-buttonClose {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #4896e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.main-buttonClose-content {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #173048;
+}
+
+.main-title {
+    font-size: 2.2rem;
+    overflow: hidden;
+}
+
+.main-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-button-href {
+    width: 100%;
+    height: 100%;
+}
+
+.btnUsers {
+    background-color: #4896e4;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+}
+
+.btnLogout {
+    background-color: #173048;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+}
+
+.footer-container {
+    width: 100%;
+    height: 5rem;
+}
+
+.footer-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-signature {
+    font-size: 1.6rem;
+    color: #4896e4;
+}
+
+@media (width < 1040px) {
+    .header-container,
+    .main-container,
+    .footer-container {
+        padding: 0 2rem;
+    }
+}
+
+@media (width < 480px) {
+    .header-logo-link {
+        gap: 1rem;
+    }
+
+    .header-logo-link-icon .fa-solid {
+        font-size: 2rem;
+    }
+
+    .header-logo-link-text {
+        font-size: 1.4rem;
+    }
+
+    .header-boxWelcome.box {
+        display: none;
+    }
+
+    .header-menuBurger {
+        display: flex;
+    }
+
+    .footer-signature {
+        text-align: center;
+        line-height: 1.1;
+    }
+}
